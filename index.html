@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ISRO Registration Form 2021</title>
+</head>
+<body>
+	 <div class="container" id="myForm" style="margin: auto;width: 50%;background-color: #e6faff;padding: 30px;">
+	 	<header><h1 style="text-align: center;">ISRO Registration Form 2021</h1>
+	 			<h1 style="text-align: center;">Department of Space, Indian Space Research Organisation</h1><br><br>
+	 	</header>
+	 	<form style="text-align: left;" action="/action_page.php" method="get">
+	 		<div style="border: 0.5px solid black; padding: 20px;">
+	 			<h3 style="text-align: center;">Student Information</h1><br><br>
+	 			<label for="fname">First Name:   </label>
+	  			<input type="text" id="fname" name="fname" style="width: 300px;" placeholder="First Name"required><br><br><br>
+	  			<label for="fname">Middle Name:</label>
+	  			<input type="text" id="fname" name="fname" style="width: 300px;" placeholder="Middle Name"required><br><br><br>
+	  			<label for="fname">Last Name:</label>
+	  			<input type="text" id="fname" name="fname" style="width: 300px;" placeholder="Last Name"required><br><br><br>
+	  			<label for="fname">Parent's Name:</label>
+	  			<input type="text" id="fname" name="fname" style="width: 300px;" placeholder="Parent's Name"required><br><br><br>
+	  			<label for="fname">Mobile No.:</label>
+	  			<input type="text" id="fname" name="fname" style="width: 150px;" placeholder="Mobile No"required><br><br><br>
+	  			<label for="fname">Email.ID:</label>
+	  			<input type="text" id="fname" name="fname" style="width: 250px;" placeholder="Email.ID"required><br><br><br>
+	  			<label for="fname">ID proof:</label>
+				<select id="idProof">
+				  <option value="Aadhar Card">Aadhar Card</option>
+				  <option value="PAN card">PAN card</option>
+				  <option value="Graduation Certificate">Graduation Certificate</option>
+				</select>
+	  			<<input type="file" id="idproof" name="idproof" accept=".pdf"><br><br><br>
+	  			<label for="que">Address:</label><br><br>
+				<textarea id="que" name="que" rows="5" cols="80" placeholder="Address" maxlength="100"></textarea><br><br><br>
+	 		</div>
+	 		<div style="border: 0.5px solid black; padding: 20px;">
+	 			<h3 style="text-align: center;">Educational Information</h1><br>
+	 			<label for="fname">Qualification:</label>
+				<select name="qual" id="qual" multiple>
+				  <option value="B.Tech">Bachelor of Technology</option>
+				  <option value="M.Tech">Master of Technology</option>
+				  <option value="MBA">Master of Business Administration</option>
+				  <option value="B.E">Bachelor of Engineering</option>
+				  <option value="MCA">MCA</option>
+				  <option value="MSc">Master of Science</option>
+				  <option value="Phd">Phd</option>
+				</select>
+				<br><br><br>
+				<label for="college">University:</label>
+				<input list="University" name="college" id="college">
+
+				<datalist id="University">
+				  <option value="Mumbai University">
+				  <option value="Shivaji University">
+				  <option value="Delhi University">
+				  <option value="Chennai University">
+				  <option value="Hyderabad University">
+				</datalist>
+	 		</div>
+	 		<div style="border: 0.5px solid black; padding: 20px;">
+	 			<h3 style="text-align: center;">Other</h1><br>
+	 				<label for="branch">Branch:</label>
+					<select id="branch" name="branch">
+					  <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+					  <option value="Electrical Engineering">Electrical Engineering</option>
+					  <option value="Electronics and Communication">Electronics and Communication</option>
+					  <option value="Aerospace">Aerospace</option>
+					</select><br><br>
+					<label for="city">Exam Center:</label>
+					<select  name="city" id="city">
+					  <optgroup label="Maharashtra">
+					    <option value="Mumbai">Mumbai</option>
+					    <option value="Pune">Pune</option>
+					  </optgroup>
+					  <optgroup label="Rajsthan">
+					    <option value="Jodhpur">Hyderabad</option>
+					    <option value="Jaipur">Audi</option>
+					  </optgroup>
+					  <optgroup label="UttarPradesh">
+					    <option value="Lukhnow">Lukhnow</option>
+					    <option value="Gorkhpur">Gorkhpur</option>
+					  </optgroup>
+					  <optgroup label="Tamilnadu">
+					    <option value="Chennai">Chennai</option>
+					    <option value="ShrihariKota">ShrihariKota</option>
+					  </optgroup>
+					</select>
+	 		</div><br><br>
+	 		<div style="text-align: center;">
+				<button onclick="submitClick()" style="padding:10px;margin-right:  20px;">Submit</button>
+				<button onclick="myFunction()" style="padding:10px;">Reset</button><br><br><br>
+				
+			</div>
+	 	</form>
+	</div>
+	<script type="text/javascript">
+		function submitClick( ) 
+		{
+			alert("Thank you for your time! Your details have been submitted!");
+		}
+		function myFunction() 
+		{
+  			document.getElementById("myForm").reset();
+		}
+	</script>
+</body>
+</html>
